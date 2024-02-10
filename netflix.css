@@ -1,0 +1,133 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    overflow-y:hidden ;
+    font-family: sans-serif;
+    border-style: none;
+}
+    
+.hero{
+    height:100vh;
+    width: 100%;
+    background-image: url("WhatsApp Image 2024-02-10 at 10.39.33_bf802ab7.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+
+}
+.navbar{
+    height:120px;
+    width:100%;
+    background-color: transparent;
+    padding:24px 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.nav-items{
+    height: 100px;;
+    width:85%;
+    background-color: transparent;
+    z-index: 3;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    justify-content: space-between;
+    
+
+}
+.logo{
+    height:100%;
+    width:20%;
+    background-image: url("WhatsApp Image 2024-02-10 at 10.39.31_0b287f85.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 5;
+    
+}
+#nav-button{
+    height: 35px;
+    width: 85px;
+    border-radius: 5px;
+    color: white;
+    font-size: 1rem;
+    font-weight: 500;
+    background-color: rgb(229, 9, 20);
+    border-style: none;
+}
+.body{
+    height:100vh;
+    max-width: 100%;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+
+}
+.heading1{
+    max-width: 80%;
+    height: auto;
+    color: white;
+    font-weight:bolder;
+    font-size: 55px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    
+
+}
+.heading2{
+    max-width: 80%;
+    height: auto;
+    color: azure;
+    font-size: 1.7rem;
+    font-weight: 400;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+.heading3{
+    height: auto;
+    color: azure;
+    font-weight: 400;
+    font-size: 1.5rem;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+
+}
+.getstarted{
+    max-width: 100%;
+    height:60px;
+    
+    margin-top: 20px;
+    display: flex;
+    gap: 10px;
+}
+#email{
+    width:430px;
+    height: 100%;
+    border-radius: 5px;
+    font-size: 1rem;
+    border: 0.07em solid aliceblue ;
+    background-color: black;
+    opacity: 65%;
+    color: white;
+    padding: 15px;
+
+}
+#body-button{
+    height: 100%;
+    width:200px;
+    font-size: 1.5rem;
+    font-weight: 600;
+    background-color: rgb(229, 9, 20);
+    color: white;
+    border-radius: 5px;
+}
