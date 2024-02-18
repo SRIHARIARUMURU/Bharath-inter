@@ -1,0 +1,58 @@
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Basic styling */
+  body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+  }
+  
+  header {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+  }
+  
+  header ul {
+    list-style: none;
+  }
+  
+  header ul li {
+    display: inline;
+    margin-right: 20px;
+  }
+  
+  header ul li a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  .section {
+    padding: 45px 0;
+    text-align: center;
+  }
+  
+  .container {
+    width: 80%;
+    margin: auto;
+  }
+  
+  .project {
+    margin-bottom: 20px;
+  }
+  
+  footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+  }
+  
