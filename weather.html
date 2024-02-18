@@ -2,48 +2,28 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Weather App</title>
-  <link rel="stylesheet" href="weather.js">
+  <link rel="stylesheet" href="weather.css" />
 </head>
 <body>
-  <div class="container">
-    <h1>Weather App</h1>
-    <div class="weather-info">
-      <label for="city">Enter City:</label>
-      <input type="text" id="city" placeholder="Enter city name">
-      <button onclick="getWeather()">Get Weather</button>
-      <div id="weather-data"></div>
-    </div>
+  <pre><h1>                SRIHARI's WEATHER APP </h1></pre>
+  <div class="app-wrap">
+    <header>
+      <input type="text" autocomplete="off" class="search-box" placeholder="Search for a city..." />
+    </header>
+    <main>
+      <section class="location">
+        <div class="city"><b>BRAHMANAKRAKA, INDIA</b></div>
+        <div class="date">sunday 18 February 2024</div>
+      </section>
+      <div class="current">
+        <div class="temp">30<span>°c</span></div>
+        <div class="weather">Sunny</div>
+        <div class="hi-low">21°c / 33°c</div>
+      </div>
+    </main>
   </div>
-  
   <script src="weather.js"></script>
 </body>
-<script>function getWeather() {
-    const apiKey = 'YOUR_API_KEY'; // Replace with your API key
-    const city = document.getElementById('city').value;
-    const apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
-  
-    fetch(apiUrl)
-      .then(response => {
-        if (!response.ok) {
-          throw new Error('Network response was not ok');
-        }
-        return response.json();
-      })
-      .then(data => {
-        const weatherData = `
-          <h2>${data.name}, ${data.sys.country}</h2>
-          <p>Temperature: ${data.main.temp}°C</p>
-          <p>Description: ${data.weather[0].description}</p>
-          <p>Humidity: ${data.main.humidity}%</p>
-          <p>Wind Speed: ${data.wind.speed} m/s</p>
-        `;
-        document.getElementById('weather-data').innerHTML = weatherData;
-      })
-      .catch(error => {
-        console.error('There was a problem fetching the weather data:', error);
-        document.getElementById('weather-data').innerHTML = 'Error fetching weather data. Please try again.';
-      });
-  }
-  </script>
 </html>
